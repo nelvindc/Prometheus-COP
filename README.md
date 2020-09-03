@@ -1,6 +1,6 @@
 ## Introduction
 
-This is a sample REST on which you can try using Prometheus and Micrometer as discussed on the brownbag session
+This is a sample REST api on which you can try using Prometheus (Hardcoded) and Micrometer as discussed on the brownbag session
 
 ## Setup if you want to run the code
 
@@ -49,7 +49,7 @@ Welcome!
 ## for Prometheus server
 
 1) go to https://prometheus.io/download/
-2) if you're on windows download and extract prometheus-2.21.0-rc.0.windows-amd64.tar.gz
+2) if you're on Windows, download and extract prometheus-2.21.0-rc.0.windows-amd64.tar.gz
 3) update prometheus.yml with these scrape configs if you want to pull the metrics from todo app
 
     metrics_path: '/v1/prometheus'
@@ -65,12 +65,12 @@ http_server_requests_seconds_bucket
 
 1) Try the hardcoded version of creating the metrics
 - comment out the dependency for micrometer/prometheus
-- activiate the dependeny on pom.xml for  Prometheus (metrics) stuff
+- activate the dependency on pom.xml for  Prometheus (metrics) stuff
 
 2) Try to add Gauge and Summary metrics on com.ti.cop.opensource.model.Metrics
 - you can use this link for reference: https://github.com/prometheus/client_java
 
-3) populate the metrics on com.ti.cop.opensource.controller.TodoController in any operation
+3) populate the created metrics on com.ti.cop.opensource.controller.TodoController in any operation
 
 
 
