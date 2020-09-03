@@ -61,6 +61,19 @@ Welcome!
 6) if you call any operation on todo app, you should be able to see results executing query
 http_server_requests_seconds_bucket
 
+## Activity
+
+1) Try the hardcoded version of creating the metrics
+- comment out the dependency for micrometer/prometheus
+- activiate the dependeny on pom.xml for  Prometheus (metrics) stuff
+
+2) Try to add Gauge and Summary metrics on com.ti.cop.opensource.model.Metrics
+- you can use this link for reference: https://github.com/prometheus/client_java
+
+3) populate the metrics on com.ti.cop.opensource.controller.TodoController in any operation
+
+
+
 
 
 
